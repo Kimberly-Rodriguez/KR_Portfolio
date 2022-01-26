@@ -1,4 +1,4 @@
-# KR_Portfolio
+# React Portfolio
 
 ## Table of Contents
 
@@ -23,11 +23,11 @@ git@github.com:Kimberly-Rodriguez/KR_React_Portfolio.git
 ```
 
 
-[Site link](https://kimberly-rodriguez.github.io/KR_React_Portfolio/)
+[Site link]()
 
 ## Tools
 
-* This project was built using HTML, CSS, JavaScript and React principles.
+* This project was built using HTML, CSS and React principles.
 
 
 ## Contact
