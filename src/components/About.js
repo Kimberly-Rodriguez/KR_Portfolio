@@ -4,7 +4,6 @@ import headshot from "../images/2.jpeg";
 
 export default function About() {
   return (
-    // Team/About
     <section class="page-section bg-light" id="team">
       <div class="container">
         <div class="text-center">
@@ -22,7 +21,7 @@ export default function About() {
                 src={headshot}
                 alt="Kimberly's Headshot"
               />
-              <h4>YAs Queen</h4>
+              <h4>Kimberly Rodriguez</h4>
               <p class="text-muted">Software Engineer</p>
               <a
                 class="btn btn-dark btn-social mx-2"
@@ -49,12 +48,12 @@ export default function About() {
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large text-muted">
-              I am a software engineer with MERN stack projet based experience{" "}
+              I am a software engineer with MERN stack projet based experience.
             </p>
 
             <p>
               Thank you for stopping by and I am looking forwad to staying
-              connected!{" "}
+              connected!
             </p>
           </div>
         </div>

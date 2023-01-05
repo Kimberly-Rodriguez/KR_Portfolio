@@ -39,7 +39,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               <a
                 href="#portfolio"
                 onClick={() => handlePageChange("Portfolio")}
-                classNameName={
+                className={
                   currentPage === "Portfolio" ? "nav-link active" : "nav-link"
                 }
               >
@@ -74,5 +74,4 @@ function NavTabs({ currentPage, handlePageChange }) {
     </nav>
   );
 }
-
 export default NavTabs;
