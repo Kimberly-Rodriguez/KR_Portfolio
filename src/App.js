@@ -2,8 +2,8 @@ import "./App.css";
 import NavTabs from "./components/NavTabs";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-// import Contact from './components/Contact';
-// import Experience from './components/Experience';
+// import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import { useState } from "react";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
     if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    // if (currentPage === 'Experience') {
-    //   return <Experience />;
-    // }
+    if (currentPage === "Experience") {
+      return <Experience />;
+    }
     // return <Contact />;
   };
 
