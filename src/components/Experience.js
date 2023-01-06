@@ -1,14 +1,14 @@
 import React from "react";
 import "../App.css";
 
-import oragamiBird from "../images/oragamiBird.png";
-import oragamiButterfly from "../images/oragamiButterfly.png";
-import oragamiHeart from "../images/oragamiHeart.png";
-import oragamiBigBird from "../images/oragamiBigBird.png";
+import origamiBird from "../images/origamiBird.png";
+import origamiButterfly from "../images/origamiButterfly.png";
+import origamiHeart from "../images/origamiHeart.png";
+import origamiBigBird from "../images/origamiBigBird.png";
 
 export default function Experience() {
   return (
-    <section className="page-section" id="about">
+    <section className="page-section" id="experience">
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">Experience</h2>
@@ -22,8 +22,8 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src={oragamiBird}
-                alt="..."
+                src={origamiBird}
+                alt="origami like bird"
               />
             </div>
             <div className="timeline-panel">
@@ -46,8 +46,8 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src={oragamiHeart}
-                alt="..."
+                src={origamiHeart}
+                alt="origami like heart"
               />
             </div>
             <div className="timeline-panel">
@@ -72,8 +72,8 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src={oragamiButterfly}
-                alt="..."
+                src={origamiButterfly}
+                alt="origami like butterfly"
               />
             </div>
             <div className="timeline-panel">
@@ -93,8 +93,8 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src={oragamiBigBird}
-                alt="..."
+                src={origamiBigBird}
+                alt="origami like big bird"
               />
             </div>
             <div className="timeline-panel">

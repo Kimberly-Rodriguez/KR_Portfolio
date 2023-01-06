@@ -4,7 +4,7 @@ import headshot from "../images/2.jpeg";
 
 export default function About() {
   return (
-    <section className="page-section bg-light" id="team">
+    <section className="page-section bg-light" id="about">
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">
@@ -48,12 +48,9 @@ export default function About() {
         <div className="row">
           <div className="col-lg-8 mx-auto text-center">
             <p className="large text-muted">
-              I am a software engineer with MERN stack projet based experience.
-            </p>
-
-            <p>
-              Thank you for stopping by and I am looking forwad to staying
-              connected!
+              I am a software engineer with knowledge of technologies like
+              React, MySQL and JavaScript. (Please visit my portfolio section
+              below for details or find me on github: at Kimberly-Rodriguez)
             </p>
           </div>
         </div>

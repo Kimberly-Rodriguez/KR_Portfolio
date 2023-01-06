@@ -2,7 +2,7 @@ import "./App.css";
 import NavTabs from "./components/NavTabs";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import { useState } from "react";
 
@@ -20,7 +20,7 @@ function App() {
     if (currentPage === "Experience") {
       return <Experience />;
     }
-    // return <Contact />;
+    return <Contact />;
   };
 
   // changes the value of the state
@@ -30,8 +30,12 @@ function App() {
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <About />
+      <Portfolio />
+      <Experience />
+      <Contact />
       {/* Here we are calling the renderPage method which will return a component  */}
-      {renderPage()}
+      {/* {renderPage()} */}
     </div>
   );
 }

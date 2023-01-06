@@ -34,7 +34,7 @@ function Portfolio() {
                 <img
                   className="img-fluid"
                   src={dragonfruitHeadShot}
-                  alt="dragonfruit"
+                  alt="dragon fruit"
                 />
               </a>
               <div className="portfolio-caption">
@@ -61,7 +61,7 @@ function Portfolio() {
                 <img
                   className="img-fluid"
                   src={energydashboardHeadShot}
-                  alt="..."
+                  alt="solar panels"
                 />
               </a>
               <div className="portfolio-caption">
@@ -87,7 +87,11 @@ function Portfolio() {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src={parksmartHeadShot} alt="..." />
+                <img
+                  className="img-fluid"
+                  src={parksmartHeadShot}
+                  alt="city street parking - neighborhood in los angeles"
+                />
               </a>
               <div className="portfolio-caption">
                 <div className="portfolio-caption-heading">ParkSmart</div>
@@ -113,7 +117,7 @@ function Portfolio() {
                 <img
                   className="img-fluid"
                   src={opportunityHeadShot}
-                  alt="..."
+                  alt="a fish jumping from a small fish bowl into a much bigger fish bowl"
                 />
               </a>
               <div className="portfolio-caption">
@@ -160,7 +164,11 @@ function Portfolio() {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src={remindHeadShot} alt="..." />
+                <img
+                  className="img-fluid"
+                  src={remindHeadShot}
+                  alt="thunder storm in a neighbood street under a purple sky "
+                />
               </a>
               <div className="portfolio-caption">
                 <div className="portfolio-caption-heading">Re:mind</div>
