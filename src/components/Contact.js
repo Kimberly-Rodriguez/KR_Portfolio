@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import Footer from "./Footer";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const messages = { name, email, phone, message };
+    console.log(messages);
+  };
+
   return (
     <div>
       <section className="page-section" id="contact">
@@ -15,7 +26,7 @@ export default function Contact() {
             </h3>
           </div>
 
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <form onSubmit={handleSubmit} id="contactForm">
             <div className="row align-items-stretch mb-5">
               <div className="col-md-6">
                 <div className="form-group">
@@ -24,8 +35,11 @@ export default function Contact() {
                     className="form-control"
                     id="name"
                     type="text"
-                    placeholder="Your Name *"
+                    placeholder="Your Full Name *"
                     data-sb-validations="required"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                   <div
                     className="invalid-feedback"
@@ -42,6 +56,9 @@ export default function Contact() {
                     type="email"
                     placeholder="Your Email *"
                     data-sb-validations="required,email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <div
                     className="invalid-feedback"
@@ -64,6 +81,9 @@ export default function Contact() {
                     type="tel"
                     placeholder="Your Phone *"
                     data-sb-validations="required"
+                    required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                   <div
                     className="invalid-feedback"
@@ -81,6 +101,9 @@ export default function Contact() {
                     id="message"
                     placeholder="Your Message *"
                     data-sb-validations="required"
+                    required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                   <div
                     className="invalid-feedback"
@@ -91,13 +114,15 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            {/* <!-- Submit success message-->*/}
+            {/* <!-- Submit success message-->
+             */}
             <div className="d-none" id="submitSuccessMessage">
               <div className="text-center text-white mb-3">
                 <div className="fw-bolder">Form submission successful!</div>
               </div>
             </div>
-            {/* <!-- Submit error message--> */}
+            {/* <!-- Submit error message-->
+             */}
             <div className="d-none" id="submitErrorMessage">
               <div className="text-center text-danger mb-3">
                 Error sending message!
@@ -106,7 +131,7 @@ export default function Contact() {
             {/* <!-- Submit Button--> */}
             <div className="text-center">
               <button
-                className="btn btn-primary btn-xl text-uppercase disabled"
+                className="btn btn-primary btn-xl text-uppercase "
                 id="submitButton"
                 type="submit"
               >
@@ -116,6 +141,10 @@ export default function Contact() {
           </form>
         </div>
       </section>
+      {/* <p>{name}</p>
+      <p>{email}</p>
+      <p>{phone}</p>
+      <p>{message}</p> */}
       <Footer />
     </div>
   );
