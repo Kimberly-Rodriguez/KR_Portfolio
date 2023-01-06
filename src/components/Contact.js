@@ -11,7 +11,23 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const messages = { name, email, phone, message };
-    console.log(messages);
+    // console.log(messages);
+
+    //   try {
+    //     const response = await fetch(`${}`, {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/json" },
+    //       credentials: "include",
+    //       body: JSON.stringify(
+    //        messages
+    //       ),
+    //     });
+    //     const content = await response.json();
+    //     console.log('success')
+    //   } catch (err) {
+    //     console.log(err);
+    //   }
+    // }
   };
 
   return (
