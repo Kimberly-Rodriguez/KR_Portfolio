@@ -14,7 +14,7 @@ export default function Experience() {
           <h2 className="section-heading text-uppercase">Experience</h2>
           <h3 className="section-subheading text-muted">
             To learn more about my work experience and education please feel
-            free to download my most up-to-date resume below. Thank you!
+            free to view my most up-to-date resume below. Thank you!
           </h3>
         </div>
         <ul className="timeline">
@@ -116,11 +116,13 @@ export default function Experience() {
           <li className="timeline-inverted">
             <div className="timeline-image">
               <h4>
-                <br />
-                Download
-                <br />
-                Resume
-                <br />
+                <a href="https://docs.google.com/document/d/1tMkKD3ikUemilOqBBSKoxplWG98QhpZ4Q2rliB_IwQc/edit?usp=sharing">
+                  <br />
+                  View
+                  <br />
+                  Resume
+                  <br />
+                </a>
               </h4>
             </div>
           </li>
