@@ -11,7 +11,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const messages = { name, email, phone, message };
-    // console.log(messages);
+    console.log(messages);
 
     //   try {
     //     const response = await fetch(`${}`, {
@@ -23,7 +23,7 @@ export default function Contact() {
     //       ),
     //     });
     //     const content = await response.json();
-    //     console.log('success')
+    //     console.log('success content')
     //   } catch (err) {
     //     console.log(err);
     //   }

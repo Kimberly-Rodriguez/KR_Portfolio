@@ -40,7 +40,7 @@ function Portfolio() {
               <div className="portfolio-caption">
                 <div className="portfolio-caption-heading">DragonFruit</div>
                 <div className="portfolio-caption-subheading text-muted">
-                  Google API search by restaurant
+                  google API search by restaurant
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ function Portfolio() {
                   Energy Dashboard
                 </div>
                 <div className="portfolio-caption-subheading text-muted">
-                  A meter level electric dashboard
+                  meter level electric dashboard
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ function Portfolio() {
               <div className="portfolio-caption">
                 <div className="portfolio-caption-heading">Opportunity</div>
                 <div className="portfolio-caption-subheading text-muted">
-                  Search for nearby jobs
+                  search for nearby jobs
                 </div>
               </div>
             </div>
