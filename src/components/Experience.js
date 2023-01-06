@@ -1,6 +1,11 @@
 import React from "react";
 import "../App.css";
 
+import oragamiBird from "../images/oragamiBird.png";
+import oragamiButterfly from "../images/oragamiButterfly.png";
+import oragamiHeart from "../images/oragamiHeart.png";
+import oragamiBigBird from "../images/oragamiBigBird.png";
+
 export default function Experience() {
   return (
     <section className="page-section" id="about">
@@ -8,8 +13,8 @@ export default function Experience() {
         <div className="text-center">
           <h2 className="section-heading text-uppercase">Experience</h2>
           <h3 className="section-subheading text-muted">
-            Please feel free to download my most up-to-date resume (below) for
-            details.
+            To learn more about my work experience and education please feel
+            free to download my most up-to-date resume below. Thank you!
           </h3>
         </div>
         <ul className="timeline">
@@ -17,7 +22,7 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src="assets/img/about/1.jpg"
+                src={oragamiBird}
                 alt="..."
               />
             </div>
@@ -41,7 +46,7 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src="assets/img/about/2.jpg"
+                src={oragamiHeart}
                 alt="..."
               />
             </div>
@@ -67,7 +72,7 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src="assets/img/about/3.jpg"
+                src={oragamiButterfly}
                 alt="..."
               />
             </div>
@@ -88,7 +93,7 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src="assets/img/about/4.jpg"
+                src={oragamiBigBird}
                 alt="..."
               />
             </div>
@@ -101,10 +106,9 @@ export default function Experience() {
               </div>
               <div className="timeline-body">
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
+                  Launched the Open Data Literacy Program which empowered
+                  neighborhoods through open data tools in topics like public
+                  safety and transportation.
                 </p>
               </div>
             </div>

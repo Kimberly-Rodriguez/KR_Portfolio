@@ -34,7 +34,7 @@ function Portfolio() {
                 <img
                   className="img-fluid"
                   src={dragonfruitHeadShot}
-                  alt="..."
+                  alt="dragonfruit"
                 />
               </a>
               <div className="portfolio-caption">
