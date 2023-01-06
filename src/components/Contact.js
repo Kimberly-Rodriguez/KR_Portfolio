@@ -14,13 +14,7 @@ export default function Contact() {
               connected!
             </h3>
           </div>
-          {/* <!-- * * * * * * * * * * * * * * *-->
-        <!-- * * SB Forms Contact Form * *-->
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- This form is pre-integrated with SB Forms.-->
-        <!-- To make this form functional, sign up at-->
-        <!-- https://startbootstrap.com/solution/contact-forms-->
-        <!-- to get an API token!--> */}
+
           <form id="contactForm" data-sb-form-api-token="API_TOKEN">
             <div className="row align-items-stretch mb-5">
               <div className="col-md-6">
@@ -97,24 +91,13 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            {/* <!-- Submit success message-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted--> */}
+            {/* <!-- Submit success message-->*/}
             <div className="d-none" id="submitSuccessMessage">
               <div className="text-center text-white mb-3">
                 <div className="fw-bolder">Form submission successful!</div>
-                To activate this form, sign up at
-                <br />
-                <a href="https://startbootstrap.com/solution/contact-forms">
-                  https://startbootstrap.com/solution/contact-forms
-                </a>
               </div>
             </div>
-            {/* <!-- Submit error message-->
-            <!---->
-            <!-- This is what your users will see when there is-->
-            <!-- an error submitting the form--> */}
+            {/* <!-- Submit error message--> */}
             <div className="d-none" id="submitErrorMessage">
               <div className="text-center text-danger mb-3">
                 Error sending message!
