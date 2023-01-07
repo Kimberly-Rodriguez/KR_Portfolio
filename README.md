@@ -7,11 +7,11 @@
 - [Tools](#tools)
 - [Contact](#contact)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
+- [WebsitePreview](#website preview)
 
 ## Description
 
-A straight forward and simple display of personal projects using React that facilitate an easy connection with others.
+A display of personal projects using React that facilitate a conversation and welcomes collaboration and connection with others.
 
 ## Instalation
 
@@ -35,6 +35,10 @@ Looking forward to staying connected: krodriguez.ucla@gmail.com and GitHub: [Kim
 
 Licensed under the [MIT License](LICENSE).
 
-## Acknowledgements
+## Website Preview
 
-[UCLA Extension Coding Bootcamp](https://bootcamp.uclaextension.edu/coding/)
+![about section](./src/images/aboutPage.png)
+![portfolio section](./src/images/portfolioPage.png)
+![experience section](./src/images/experiencePage.png)
+![experienceTwo section](./src/images/experienceTwoPage.png)
+![contact section](./src/images/contactPage.png)
