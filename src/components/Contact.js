@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "../App.css";
 import Footer from "./Footer";
+// import { validateEmail } from "../utils/helpers";
+import emailjs from "@emailjs/browser";
+// import { SuccessModal } from "./successModal";
+// import { ErrorModal } from "./errorModal";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -8,26 +12,29 @@ export default function Contact() {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
+  const [successModalShow, setSuccessModalShow] = useState(false);
+  // const [errorModalShow, setErrorModalShow] = useState(false);
+
+  const formState = { name, email, phone, message };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const messages = { name, email, phone, message };
-    console.log(messages);
-
-    //   try {
-    //     const response = await fetch(`${}`, {
-    //       method: "POST",
-    //       headers: { "Content-Type": "application/json" },
-    //       credentials: "include",
-    //       body: JSON.stringify(
-    //        messages
-    //       ),
-    //     });
-    //     const content = await response.json();
-    //     console.log('success content')
-    //   } catch (err) {
-    //     console.log(err);
-    //   }
-    // }
+    emailjs
+      .send(
+        "service_emsytnk",
+        "template_n5ati2n",
+        formState,
+        "vBe1YkLGiyKNRnFxc"
+      )
+      .then(
+        (result) => {
+          console.log("Form submission successful!", result.text);
+          setSuccessModalShow(true);
+        },
+        (error) => {
+          console.log("CONTACT FORM FAILED", error.text);
+        }
+      );
   };
 
   return (
@@ -132,18 +139,22 @@ export default function Contact() {
             </div>
             {/* <!-- Submit success message-->
              */}
-            <div className="d-none" id="submitSuccessMessage">
-              <div className="text-center text-white mb-3">
-                <div className="fw-bolder">Form submission successful!</div>
-              </div>
-            </div>
+            {/* <SuccessModal
+              show={successModalShow}
+              onHide={() => {
+                setSuccessModalShow(false);
+                window.location.reload(false);
+              }}
+            /> */}
+
             {/* <!-- Submit error message-->
              */}
-            <div className="d-none" id="submitErrorMessage">
-              <div className="text-center text-danger mb-3">
-                Error sending message!
-              </div>
-            </div>
+
+            {/* <ErrorModal
+              show={errorModalShow}
+              onHide={() => setErrorModalShow(false)}
+            /> */}
+
             {/* <!-- Submit Button--> */}
             <div className="text-center">
               <button
@@ -157,10 +168,7 @@ export default function Contact() {
           </form>
         </div>
       </section>
-      {/* <p>{name}</p>
-      <p>{email}</p>
-      <p>{phone}</p>
-      <p>{message}</p> */}
+
       <Footer />
     </div>
   );

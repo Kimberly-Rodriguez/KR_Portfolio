@@ -25,7 +25,7 @@ git@github.com:Kimberly-Rodriguez/KR_React_Portfolio.git
 
 ## Tools
 
-- This project was built using HTML, CSS and React principles.
+- This project was built using HTML, CSS, Bootstrap and React principles.
 
 ## Contact
 
