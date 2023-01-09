@@ -116,7 +116,7 @@ export default function Experience() {
           <li className="timeline-inverted">
             <div className="timeline-image">
               <h4>
-                <a href="https://docs.google.com/document/d/1tMkKD3ikUemilOqBBSKoxplWG98QhpZ4Q2rliB_IwQc/edit?usp=sharing">
+                <a href="https://drive.google.com/file/d/1mbJUbL61ujvOfRC6180eIl7gr4BkUwWO/view?usp=sharing">
                   <br />
                   View
                   <br />
