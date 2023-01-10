@@ -30,7 +30,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="col-lg-4 text-lg-end">
-            <a className="link-dark text-decoration-none me-3" href="about">
+            <a className="link-dark text-decoration-none me-3" href="#about">
               Back to the top
             </a>
           </div>
