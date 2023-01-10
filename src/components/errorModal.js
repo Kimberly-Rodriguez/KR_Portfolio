@@ -1,9 +1,9 @@
-// import React from "react";
+import React from "react";
 
-// export function SuccessModal(props) {
-//   return (
-//     <div {...props} className="d-none" id="submitErrorMessage">
-//       <div className="text-center text-danger mb-3">Error sending message!</div>
-//     </div>
-//   );
-// }
+export function ErrorModal(props) {
+  return (
+    <div className={!props.show ? "d-none" : ""} id="submitErrorMessage">
+      <div className="text-center text-danger mb-3">Error sending message!</div>
+    </div>
+  );
+}

@@ -3,8 +3,8 @@ import "../App.css";
 import Footer from "./Footer";
 // import { validateEmail } from "../utils/helpers";
 import emailjs from "@emailjs/browser";
-// import { SuccessModal } from "./successModal";
-// import { ErrorModal } from "./errorModal";
+import { SuccessModal } from "./successModal";
+import { ErrorModal } from "./errorModal";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -13,28 +13,41 @@ export default function Contact() {
   const [message, setMessage] = useState("");
 
   const [successModalShow, setSuccessModalShow] = useState(false);
-  // const [errorModalShow, setErrorModalShow] = useState(false);
+  const [errorModalShow, setErrorModalShow] = useState(false);
 
+  const [errorMessage, setErrorMessage] = useState("");
   const formState = { name, email, phone, message };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .send(
-        "service_emsytnk",
-        "template_n5ati2n",
-        formState,
-        "vBe1YkLGiyKNRnFxc"
-      )
-      .then(
-        (result) => {
-          console.log("Form submission successful!", result.text);
-          setSuccessModalShow(true);
-        },
-        (error) => {
-          console.log("CONTACT FORM FAILED", error.text);
-        }
-      );
+
+    if (!errorMessage) {
+      if (
+        e.target[0].value === "" ||
+        e.target[1].value === "" ||
+        e.target.value === ""
+      ) {
+        setErrorModalShow(true);
+        return;
+      } else {
+        emailjs
+          .send(
+            "service_emsytnk",
+            "template_n5ati2n",
+            formState,
+            "vBe1YkLGiyKNRnFxc"
+          )
+          .then(
+            (result) => {
+              console.log("Form submission successful!", result.text);
+              setSuccessModalShow(true);
+            },
+            (error) => {
+              console.log("CONTACT FORM FAILED", error.text);
+            }
+          );
+      }
+    }
   };
 
   return (
@@ -139,21 +152,21 @@ export default function Contact() {
             </div>
             {/* <!-- Submit success message-->
              */}
-            {/* <SuccessModal
+            <SuccessModal
               show={successModalShow}
-              onHide={() => {
-                setSuccessModalShow(false);
-                window.location.reload(false);
-              }}
-            /> */}
+              // onHide={() => {
+              //   setSuccessModalShow(false);
+              //   window.location.reload(false);
+              // }}
+            />
 
             {/* <!-- Submit error message-->
              */}
 
-            {/* <ErrorModal
+            <ErrorModal
               show={errorModalShow}
-              onHide={() => setErrorModalShow(false)}
-            /> */}
+              // onHide={() => setErrorModalShow(false)}
+            />
 
             {/* <!-- Submit Button--> */}
             <div className="text-center">
