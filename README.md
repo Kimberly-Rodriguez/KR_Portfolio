@@ -7,7 +7,7 @@
 - [Tools](#tools)
 - [Contact](#contact)
 - [License](#license)
-- [WebsitePreview](#websitepreview)
+- [Preview](#preview)
 
 ## Description
 
@@ -35,7 +35,7 @@ Looking forward to staying connected: krodriguez.ucla@gmail.com and GitHub: [Kim
 
 Licensed under the [MIT License](LICENSE).
 
-## Website Preview
+## Preview
 
 ![about section](./src/images/aboutPage.png)
 ![portfolio section](./src/images/portfolioPage.png)
