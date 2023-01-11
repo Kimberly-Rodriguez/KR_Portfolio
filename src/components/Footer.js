@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-4 text-lg-start">
-            Copyright &copy; Kimberly Rodriguez 2022
+            Copyright &copy; Kimberly Rodriguez 2023
           </div>
           <div className="col-lg-4 my-3 my-lg-0">
             <a
