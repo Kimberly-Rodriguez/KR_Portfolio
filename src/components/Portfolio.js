@@ -141,7 +141,11 @@ function Portfolio() {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src={techblogHeadShot} alt="..." />
+                <img
+                  className="img-fluid"
+                  src={techblogHeadShot}
+                  alt="a floating astronaut"
+                />
               </a>
               <div className="portfolio-caption">
                 <div className="portfolio-caption-heading">TechBlog</div>

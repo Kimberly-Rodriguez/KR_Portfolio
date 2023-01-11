@@ -1,10 +1,11 @@
 import React from "react";
 import "../App.css";
 
-import origamiBird from "../images/origamiBird.png";
-import origamiButterfly from "../images/origamiButterfly.png";
-import origamiHeart from "../images/origamiHeart.png";
-import origamiBigBird from "../images/origamiBigBird.png";
+import javascriptSymbol from "../images/javascriptLogo.png";
+import reactSymbol from "../images/reactLogo.png";
+import htmlLogo from "../images/htmlLogo.png";
+
+import sqlLogo from "../images/sqlLogo.png";
 
 export default function Experience() {
   return (
@@ -22,7 +23,7 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src={origamiBird}
+                src={reactSymbol}
                 alt="origami like bird"
               />
             </div>
@@ -46,7 +47,7 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src={origamiHeart}
+                src={javascriptSymbol}
                 alt="origami like heart"
               />
             </div>
@@ -71,8 +72,8 @@ export default function Experience() {
           <li>
             <div className="timeline-image">
               <img
-                className="rounded-circle img-fluid"
-                src={origamiButterfly}
+                className="rounded-circle img-center"
+                src={htmlLogo}
                 alt="origami like butterfly"
               />
             </div>
@@ -93,7 +94,7 @@ export default function Experience() {
             <div className="timeline-image">
               <img
                 className="rounded-circle img-fluid"
-                src={origamiBigBird}
+                src={sqlLogo}
                 alt="origami like big bird"
               />
             </div>

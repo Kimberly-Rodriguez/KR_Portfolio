@@ -48,8 +48,8 @@ export default function About() {
         <div className="row">
           <div className="col-lg-8 mx-auto text-center">
             <p className="large text-muted">
-              I am a strong problem solver with a team-centered mindset and
-              passion for user-centered applications.
+              I am a software engineer with strong problem solving skills, a
+              team-centered mindset and passion for user-centered applications.
             </p>
             <p>
               Please visit my portfolio section below for details or find me on
