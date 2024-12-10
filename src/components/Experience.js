@@ -29,7 +29,7 @@ export default function Experience() {
             </div>
             <div className="timeline-panel">
               <div className="timeline-heading">
-                <h4>2021 - Present</h4>
+                <h4>2022 - Present</h4>
                 <h4 className="subheading"> Full Stack Engineer | innowatts</h4>
               </div>
               <div className="timeline-body">
