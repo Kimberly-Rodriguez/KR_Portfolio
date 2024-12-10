@@ -69,7 +69,7 @@ export default function Experience() {
               </div>
             </div>
           </li>
-          <li>
+          {/* <li>
             <div className="timeline-image">
               <img
                 className="rounded-circle img-center"
@@ -89,7 +89,7 @@ export default function Experience() {
                 </p>
               </div>
             </div>
-          </li>
+          </li> */}
           <li className="timeline-inverted">
             <div className="timeline-image">
               <img
@@ -100,7 +100,7 @@ export default function Experience() {
             </div>
             <div className="timeline-panel">
               <div className="timeline-heading">
-                <h4>2013 - 2017</h4>
+                <h4>2013 - 2022</h4>
                 <h4 className="subheading">
                   Data Programs Lead | City of Los Angeles{" "}
                 </h4>
